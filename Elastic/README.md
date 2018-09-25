@@ -6,8 +6,11 @@ python <sensor name> <field description file>
 ```
 ## Create an input file describing the fields of the sensor format 
 The input is a CSV file.
+
 Column 0: field name (omit boilerplate metron fields, i.e. ip_src_addr, ip_src_port, etc.  Boilerplate fields are added automatically.)
+
 Column 1: type (optional: default is keyword)
+
 Column 2 and up: additional name value pairs describing the type for example the format for a date field (optional: no qualifications by default)
 
 For example, the test_fields input file below:
