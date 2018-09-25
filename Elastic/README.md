@@ -21,6 +21,7 @@ first_field
 second_field,integer
 third_field,date,format=epoch_millis
 fourth_field,date,format=yyyy-MM-dd HH:mm:ss.SSS
+fifth_field,my_type,name1=value,name2=value
 ```
 
 ## Run the command
@@ -193,6 +194,11 @@ PUT _template/test_index
         "fourth_field": {
           "type" : "date", 
           "format" : "yyyy-MM-dd HH:mm:ss.SSS"
+        }, 
+        "fifth_field": {
+          "type" : "my_type", 
+          "name1" : "value", 
+          "name2" : "value"
         }
       }
     }

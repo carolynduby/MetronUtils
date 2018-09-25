@@ -63,7 +63,10 @@ def main():
                       sys.exit(1)
                    else:
                        print(", ") 
-                       sys.stdout.write("          \"%s\" : \"%s\"\n" % (qual_pair[0].strip(), qual_pair[1].strip()))
+                       sys.stdout.write("          \"%s\" : \"%s\"" % (qual_pair[0].strip(), qual_pair[1].strip()))
+                       qual_count = qual_count + 1
+                if (qual_count > 0):
+                    print
               
              sys.stdout.write("        }")
              num_fields = num_fields + 1
